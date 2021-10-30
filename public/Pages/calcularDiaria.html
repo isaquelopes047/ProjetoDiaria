@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/Nav.css">
+    <link rel="stylesheet" href="../style/calculoDiaria.css">
+    <link rel="stylesheet" href="../style/footer.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>Calcular Diaria</title>
+</head>
+
+<body>
+
+    <nav class="containerAllNav">
+        <button class="openNav"><img src="/public/icons/iconMenuOpen.png" alt="Abrir Menu"></button>
+        <button class="closeNav"><img src="/public/icons/iconCloseMenuNav.png" alt="Fechar Menu"></button>
+    </nav>
+
+    <nav class="containerOptions">
+        <ul>
+            <a href="/public/index.html">
+                <li><img src="/public/icons/iconNavHome.png" alt="Inicio"> Inicio</li>
+            </a>
+            <a href="/public/Pages/calcularDiaria.html">
+                <li><img src="/public/icons/iconNavDiaria.png" alt="Inicio"> Diarias</li>
+            </a>
+            <a href="#">
+                <li><img src="/public/icons/iconNavFolga.png" alt="Inicio"> Folgas</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="titleContainer">
+        <p>Diaria</p>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+            <img src="../icons/iconDiaria.png" alt="Diaria">
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Lista de Diarias</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li class="infoDiariaList"> 1 diaria - 65,60</li>
+                            <!-- <li> 2 diarias - 131,20</li>
+                            <li> 3 diarias - 196,80</li>
+                            <li> 4 diarias - 262,40</li>
+                            <li> 5 diarias - 328,00</li>
+                            <li> 6 diarias - 393,60</li>
+                            <li> 7 diarias - 459,20</li>
+                            <li> 8 diarias - 524,80</li>
+                            <li> 9 diarias - 590,40</li>
+                            <li> 10 diarias - 656,00</li> -->
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="containerAllDiaria">
+            <div class="containerTitleP">
+                <p class="titleDiaria">Digite o valor a receber</p>
+                <img src="/public/icons/iconMoney.png" alt="Valor">
+            </div>
+            <input type="number" class="valueDiaria" onchange="calcular()" placeholder="R$">
+            <div class="containerResultDiaria">
+                <p class="resultDiaria"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+
+        </div>
+    </footer>
+
+
+    <script src="/JS/Menu.js"></script>
+    <script src="/JS/calculoDiaria.js"></script>
+    <script src="/JS/modalJs.js"></script>
+    <script src="/JS/infoDiaria.js"></script>
+</body>
+
+</html>
