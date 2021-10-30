@@ -11,17 +11,18 @@
 }
 
 .containerTitleP{
-    width: 270px;
+    width: auto;
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .titleDiaria{
     color:rgb(39, 39, 39);
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .containerAllDiaria input{
