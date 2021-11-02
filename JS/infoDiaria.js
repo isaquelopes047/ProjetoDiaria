@@ -13,7 +13,7 @@ const newLocal = {
 };
 const todasAsDiarias = newLocal;
 
-function newFunction() {
+newFunction = () => {
     const obj1 = document.querySelector('.infoDiaria1');
     obj1.innerHTML = `1 Diaria - ${todasAsDiarias.diaria1.toFixed(2)}`;
     const obj2 = document.querySelector('.infoDiaria2');

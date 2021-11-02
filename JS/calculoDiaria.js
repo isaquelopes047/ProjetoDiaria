@@ -1,7 +1,7 @@
 
 const full = 65.60
 
-function calcular(){
+calcular = () => {
     let valorInput = document.querySelector('.valueDiaria').value;
     let result = valorInput / full;
 
