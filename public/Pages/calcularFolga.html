@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     <link rel="stylesheet" href="../style/footer.css">
     <title>Calculo Folga</title>
 </head>
+
 <body>
-    
+
     <nav class="containerAllNav">
-        <button class="openNav"><img src="/public/icons/iconMenuOpen.png" alt="Abrir Menu"></button>
-        <button class="closeNav"><img src="/public/icons/iconCloseMenuNav.png" alt="Fechar Menu"></button>
+        <button class="openNav"><img src="../icons/iconMenuOpen.png" alt="Abrir Menu"></button>
+        <button class="closeNav"><img src="../icons/iconCloseMenuNav.png" alt="Fechar Menu"></button>
     </nav>
 
     <nav class="containerOptions">
@@ -30,14 +32,26 @@
         </ul>
     </nav>
 
-    <div class="titleContainer">
-        <a href="../index.html"><img src="../icons/iconReturn.png" alt="Retornar" class="buttonReturn"></a>
-        <p>Calculo de Folgas</p>
-    </div>
+    <main>
+        <div class="titleContainer">
+            <a href="/index.html"><img src="../icons/iconReturn.png" alt="Retornar" class="buttonReturn"></a>
+            <p>Calculo de Folgas</p>
+        </div>
 
-    <div class="containerFolgaInfo">
-        <p>Informe os dias de inicio e termino da viagem</p>
-    </div>
+        <div class="containerFolgaInfo">
+            <p>Informe os dias de inicio e termino da viagem</p>
+        </div>
+
+        <div>
+            <input type="date" class="textbox" id="dataDois" onchange="chamar()">
+
+            <input type="date" class="textbox" id="dataUm" onchange="chamar()" />
+
+            <input type="text" class="textbox" id="numeroDias" name="numdays" />
+
+            <script src="./main.js"></script>
+        </div>
+    </main>
 
     <footer>
         <div class="footerContainer">
@@ -47,5 +61,7 @@
 
 
     <script src="/JS/Menu.js"></script>
+    <script src="/JS/calculoFolga.js"></script>
 </body>
+
 </html>
